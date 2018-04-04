@@ -1,6 +1,6 @@
 {
   "name": "file-archive",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "a fast file archiver writing files in a date based directory hierarchy",
   "main": "index.js",
   "scripts": {
