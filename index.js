@@ -85,7 +85,7 @@ class FileArchiver{
 					if (i===3) {
 						for (let j=items.length; j--;) {
 							if (this.filterName(items[j])) {
-								return items[j]
+								return filepath + path.sep + items[j]
 							}
 						}
 						return
