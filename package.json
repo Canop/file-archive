@@ -1,0 +1,26 @@
+{
+  "name": "file-archive",
+  "version": "0.1.0",
+  "description": "a fast file archiver writing files in a date based directory hierarchy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Canop/file-archive.git"
+  },
+  "keywords": [
+    "file",
+    "archive",
+    "javascript",
+    "node",
+    "async"
+  ],
+  "author": "Denys Séguret <denys.seguret@gmail.com> (http://dystroy.org)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Canop/file-archive/issues"
+  },
+  "homepage": "https://github.com/Canop/file-archive#readme"
+}
