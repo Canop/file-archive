@@ -9,7 +9,7 @@ A simple and fast archiver storing files in a date based directory tree, handlin
 
 ### Preparing the archive
 
-Initialize your instance of `FileArchiver`:
+Initialize your instance of `FileArchive`:
 
 	const FileArchive = require("file-archive")
 	const archive = new FileArchive("/var/stuff", "map-", "json")
@@ -26,11 +26,13 @@ This writes a new file and gives you its filepath, for example
 
 If you're calling this function several times in the same millisecond, the collision will be catched and different files will be written (by incrementing the milliseconds part of the name).
 
-Having several FileArchivers mapped to the same directory is totally OK. It lets you store several types of files in the same directory hierarchy.
+Having several `FileArchive` mapped to the same directory is totally OK. It lets you store several types of files in the same directory hierarchy.
 
 It's possible to pass a specific time (instead of having the current one used):
 
 	let filepath = await archive.write(buffer, someTimeMillis)
+
+Note that the directory names are based on UTC, which prevents any error related to DST or server timezone.
 
 ### Finding the last entry
 
